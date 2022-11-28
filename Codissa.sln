@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codissa", "Codissa\Codissa.csproj", "{FBEA0EC7-F7F4-4DDC-99AE-5E3E8EEB7BC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBEA0EC7-F7F4-4DDC-99AE-5E3E8EEB7BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBEA0EC7-F7F4-4DDC-99AE-5E3E8EEB7BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBEA0EC7-F7F4-4DDC-99AE-5E3E8EEB7BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBEA0EC7-F7F4-4DDC-99AE-5E3E8EEB7BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BA8C1A1-86E9-43ED-88D0-86185D9705EA}
+	EndGlobalSection
+EndGlobal
