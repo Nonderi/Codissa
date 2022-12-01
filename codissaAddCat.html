@@ -31,32 +31,22 @@
                     <div class="form-group"><input class="form-control" type="text" id="age" placeholder="Age">
                     </div>
                     <div div="wrapper">
-                        <label for="yes_no_radio2" id="likechildren">Does she/he get along with children?</label>
-                        <p>
-                            <input type="radio" name="yes_no1" checked>Yes</input>
-                        </p>
-                        <p>
-                            <input type="radio" name="yes_no1">No</input>
-                        </p>
+                        <label>Does she/he get along with children?
+                            <input type="checkbox" id="likechildren"/>
+                        </label>
                     </div>
                     <div div="wrapper">
-                        <label for="yes_no_radio2" id="likeanimal">Does she/he get along with other animals?</label>
-                        <p>
-                            <input type="radio" name="yes_no2" checked>Yes</input>
-                        </p>
-                        <p>
-                            <input type="radio" name="yes_no2">No</input>
-                        </p>
+                        <label for="likeanimal">Does she/he get along with other animals?</label>
+                        <input type="checkbox" id="likeanimal"/>
                     </div>
                     <div div="wrapper">
-                        <label for="yes_no_radio2" id="demanding">Is she demanding?</label>
-                        <p>
-                            <input type="radio" name="yes_no3" checked>Yes</input>
-                        </p>
-                        <p>
-                            <input type="radio" name="yes_no3">No</input>
-                        </p>
+                        <label for="demanding">Is she demanding?</label>
+                        <input type="checkbox" id="demanding"/>
                     </div>
+                    
+                    <div class="form-group"><input class="form-control" type="text" id="picture" placeholder="Picture" value="https://codissacats.blob.core.windows.net/codissacats/1.jpg" />
+                    </div>
+                    
                     <!-- <div class="form-group"><input class="form-control" type="bool" id="likechildren" placeholder="Likes Children (true/false)">
                     </div>
                     <div class="form-group"><input class="form-control" type="bool" id="likeanimal" placeholder="Likes Other Animals (true/false)">
@@ -121,7 +111,8 @@
                     <div class="form-group"><textarea class="form-control" type="description">
                     </textarea></div> -->
 
-                    <div class="form-group-bottom"><button class="btn btn-primary btn-block" type="button" onclick="AddCat()">Send</button></div>
+                    <div class="form-group-bottom"><button 
+                        class="btn btn-primary btn-block" type="button" onclick="AddCat()">Send</button></div>
                 </form>
             </div>
 
