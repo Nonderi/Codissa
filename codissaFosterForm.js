@@ -1,8 +1,12 @@
+
+const urlParams = new URLSearchParams(window.location.search);
+console.log(urlParams.get('catid'))
+
 function ApplyCat(id) {
     alert("Your application has been sent! We will contact you shortly!");
-    console.log(id)
+    let catid= urlParams.get('catid')
 
-    let url = "https://codissacats.azurewebsites.net/api/cat" + "/" + id;
+    let url = "https://codissacats.azurewebsites.net/api/cat/"+catid ;
     fetch (url)
     .then(res=>res.json())
     .then(cat=>
