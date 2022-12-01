@@ -14,7 +14,7 @@ function Get() {
       let cat_rows = "";
 
         // "<tr><th>name</th><th>color</th><th>food</th></tr>";
-      for (let cat of data) {
+      for (let cat of data) { 
         cat_rows += 
         `
         <td><div id="cat-tbody" class="card" style="width: 30rem; height: 60rem;">
