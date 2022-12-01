@@ -3,18 +3,18 @@
 //   }
 //Get();
 function AddCat(){
-  var Name = document.getElementById("name").value;
-  var Age = document.getElementById("age").value;
-  var Character = document.getElementById("character").value;
-  var Color = document.getElementById("catcolor").value;
-  var LikeChildren = document.getElementById("likechildren").value;
-  var LikeAnimal = document.getElementById("likeanimal").value;
-  var Food = document.getElementById("food").value;
-  var Status = document.getElementById("status").value;
-  var Details = document.getElementById("details").value;
+  let Name = document.getElementById("Name").value;
+  let Age = document.getElementById("age").value;
+  let Character = document.getElementById("character").value;
+  let Color = document.getElementById("catcolor").value;
+  let LikeChildren = document.getElementById("likechildren").value;
+  let LikeAnimal = document.getElementById("likeanimal").value;
+  let Food = document.getElementById("food").value;
+  let Status = document.getElementById("status").value;
+  let Details = document.getElementById("details").value;
 
   var data = JSON.stringify({
-    "name": Name,
+    "Name": Name,
     "age": Age,
     "character": Character,
     "catcolor": Color,
@@ -25,21 +25,31 @@ function AddCat(){
     "details": Details
   });
 
-  fetch("https://codissacats.azurewebsites.net/api/cat",
-  {method:"POST", body:data, headers:{"Content-Type":"application/json"}})
-  .then(res=>res.json())
-  .then(data => console.dir(data))
+  fetch("https://codissacats.azurewebsites.net/api/cat", requestOptions)
+        .then(res=>res.json())
+        .then(data=>{
+            console.dir(data)
+            showResponse(data)
+        })
+        .catch(error=>console.dir(error))
+
+      }
+
+//   fetch("https://codissacats.azurewebsites.net/api/cat",
+//   {method:"POST", body:data, headers:{"Content-Type":"application/json"}})
+//   .then(res=>res.json())
+//   .then(data => console.dir(data))
 
 
-      // if(res.ok){
-      //     Get()
-      // }
-      // else{
-      //     console.dir(res)
-      // }
+//       // if(res.ok){
+//       //     Get()
+//       // }
+//       // else{
+//       //     console.dir(res)
+//       // }
   
-  .catch(error=>console.dir(error))
- }
+//   .catch(error=>console.dir(error))
+//  }
 
 
 
