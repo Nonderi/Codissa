@@ -2,7 +2,7 @@
 //     alert("We will contact you shortly!");
 //   }
 //Get();
-function AddCat(){
+const AddCat = () => {
   let Name = document.getElementById("Name").value;
   let Age = document.getElementById("age").value;
   let Character = document.getElementById("character").value;
@@ -25,8 +25,12 @@ function AddCat(){
     "details": Details
   });
 
-  fetch("https://codissacats.azurewebsites.net/api/cat", requestOptions)
-        .then(res=>res.json())
+  fetch("https://codissacats.azurewebsites.net/api/cat", {
+  method: 'POST',
+  body: JSON.stringify(uusiHenkilö),
+  headers: { "accept": "application/json", "Content-Type": "application/json" }
+})
+  .then(res=>res.json())
         .then(data=>{
             console.dir(data)
             showResponse(data)
