@@ -57,6 +57,9 @@ function Get() {
                     </div> <br>
                     <div class="form-group"><button class="btn btn-primary btn-block" type=button
                     onClick="parent.location='codissaDeleteReservation.html?catid=${cat.id}'">Cancel reservation</button>
+                    </div><br>
+                    <div class="form-group"><button class="btn btn-primary btn-block" type=button
+                    onClick="parent.location='DeleteCat.html?catid=${cat.id}'">Delete cat</button>
                     </div>
                 </div>
             </td>
