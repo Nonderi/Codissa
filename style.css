@@ -92,11 +92,14 @@
 }
 
 .container div .btn-primary:hover,
-.container div .btn-primary:active {
+.container div .btn-primary:active,
+.my-button:hover,
+.my-button:active {
   background: #9b9c9c;
 }
 
-.container div .btn-primary:active {
+.container div .btn-primary:active
+.my-button:active {
   transform: translateY(1px);
 }
 
@@ -107,4 +110,34 @@
   color: #6f7a85;
   opacity: 0.9;
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #8fa1c5;
 }

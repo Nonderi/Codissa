@@ -43,15 +43,15 @@ function Get() {
 
                     <div class="form-group"><button class="btn btn-primary btn-block my-button" type="button"
                     onClick="parent.location='codissaFosterForm.html?catid=${cat.id}'">Pick me</button>
-                    </div> <br>
+                    </div>
                     <div class="form-group"><button class="btn btn-primary btn-block my-button" type="button"
                     onClick="parent.location='codissaDeleteReservation.html?catid=${cat.id}'">Cancel reservation</button>
-                    </div><br>
+                    </div>
                     <div class="form-group"><button class="btn btn-primary btn-block my-button" type="button"
                     onClick="parent.location='DeleteCat.html?catid=${cat.id}'">Delete cat</button>
                     </div>
           </div>
-          </div>
+          </div><br><br>
         `;
       }
       cat_data.innerHTML = cat_rows;

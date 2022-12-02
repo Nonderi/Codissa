@@ -4,6 +4,7 @@
 //Get();
 const apiURL = "https://codissacats.azurewebsites.net/api/cat";
 const AddCat = () => {
+  alert("Cat added!");
   let Name = document.getElementById("name").value;
   let Age = document.getElementById("age").value;
   let Character = document.getElementById("character").value;
