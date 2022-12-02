@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>U</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="container mt-5">
-        <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="codissaCats.html">Cats</a></li>
-            <li><a href="codissaAddCat.html">Add Cat</a></li>
-        </ul><br><br>
-        <br>
-        <div class="row">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="codissaCats.html">Cats</a></li>
+        <li><a href="codissaAddCat.html">Add Cat</a></li>
+      </ul>
+      <br /><br />
+      <br />
+      <div class="row">
+        <div class="col-sm-7">
+          <img
+            src="https://img.freepik.com/premium-photo/cute-gray-cat-kid-animal-with-interested-question-facial-face-expression-look-up-copy-space-small-tabby-kitten-white-background-vertical-format_221542-2278.jpg?w=740"
+            width="600"
+          />
+        </div>
 
-            <div class="col-sm-7"><img
-                    src="https://img.freepik.com/premium-photo/cute-gray-cat-kid-animal-with-interested-question-facial-face-expression-look-up-copy-space-small-tabby-kitten-white-background-vertical-format_221542-2278.jpg?w=740"
-                    width="600">
-            </div>
+        <div class="container col-sm-4">
+          <form class="post">
+            <br /><br />
+            <h1 class="text-center"><strong>Codissa</strong></h1>
+            <h4 class="text-first-chapter">
+              <strong>Place to find your new best friend!</strong>
+            </h4>
 
-            <div class="container col-sm-4">
-
-                <form class="post">
-
-                    <br/><br/>
-                    <h1 class="text-center"><strong>Codissa</strong></h1>
-                    <h4 class="text-first-chapter"><strong>Place to find your new best friend!</strong></h4>
-
-                    <div class="wrapper">
+            <!-- <div class="wrapper">
                         <label for="yes_no_radio1">Do you have children?</label>
                         <p>
                             <input type="radio" name="yes_no1" checked>Yes</input>
@@ -41,9 +44,9 @@
                         <p>
                             <input type="radio" name="yes_no1">No</input>
                         </p>
-                    </div>
+                    </div> -->
 
-                    <div class="wrapper">
+            <!-- <div class="wrapper">
                         <label for="yes_no_radio2">Do you have pets?</label>
                         <p>
                             <input type="radio" name="yes_no2" checked>Yes</input>
@@ -51,51 +54,65 @@
                         <p>
                             <input type="radio" name="yes_no2">No</input>
                         </p>
-                    </div>
+                    </div> -->
 
-                    <label for="experience">How many years of experience do you have?</label>
+            <label for="experience"
+              >How many years of experience do you have?</label
+            >
 
-                    <select name="experience" id="experience">
-                        <option value="No experience">No experience</option>
-                        <option value="Less than a year">Less than a year</option>
-                        <option value="Less than two years">Less than two years</option>
-                        <option value="Over two years">Over two years</option>
-                    </select>
+            <select name="experience" id="experience">
+              <option value="No experience">No experience</option>
+              <option value="Less than a year">Less than a year</option>
+              <option value="Less than two years">Less than two years</option>
+              <option value="Over two years">Over two years</option>
+            </select>
 
-                    <br/><br/>
-                    <label for="color">Do you have preference of the color of your cat?</label>
+            <br /><br />
+            <label for="color"
+              >Do you have preference of the color of your cat?</label
+            >
 
-                    <select name="color" id="color">
-                        <option value="No preference">No preference</option>
-                        <option value="Black/white">Black/white</option>
-                        <option value="Brown">Brown</option>
-                        <option value="Light/white">Light/white</option>
-                        <option value="Red/orange">Red/orange</option>
-                        <option value="Multicolor">Multicolor</option>
-                    </select>
+            <select name="color" id="color">
+              <option value="No preference">No preference</option>
+              <option value="Black/white">Black/white</option>
+              <option value="Brown">Brown</option>
+              <option value="Light/white">Light/white</option>
+              <option value="Red/orange">Red/orange</option>
+              <option value="Multicolor">Multicolor</option>
+            </select>
 
-                    <br/><br/>
-                    <label for="age">Do you have preference of the age of your cat?</label>
+            <br /><br />
+            <label for="age"
+              >Do you have preference of the age of your cat?</label
+            >
 
-                    <select name="age" id="age">
-                        <option value="No preference">No preference</option>
-                        <option value="Kitten">Kitten</option>
-                        <option value="1-3">1-3</option>
-                        <option value="4-6">4-6</option>
-                        <option value="6+">6+</option>
-                    </select>
+            <select name="age" id="age">
+              <option value="No preference">No preference</option>
+              <option value="Kitten">Kitten</option>
+              <option value="1-3">1-3</option>
+              <option value="4-6">4-6</option>
+              <option value="6+">6+</option>
+            </select>
 
-                    <br/><br/>
-                    <div class="form-group"><button id="findCats" class="btn btn-primary btn-block" type=button
-                            onClick="parent.location='codissaCats.html'">Find cats</button></div>
-                    <br/>
-                    <a href="codissaAddCat.html">Need a new home for your cat?</a>
-                </form>
+            <br /><br />
+            <div class="form-group">
+              <button
+                id="findCats"
+                class="btn btn-primary btn-block"
+                type="button"
+                onClick="parent.location='codissaCats.html'"
+              >
+                Find cats
+              </button>
             </div>
+            <br />
+            <a href="codissaAddCat.html">Need a new home for your cat?</a>
+          </form>
+        </div>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-        </div> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+      </div>
     </div>
-</body>
+  </body>
 </html>
