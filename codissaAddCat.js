@@ -1,7 +1,3 @@
-// function AddCat() {
-//     alert("We will contact you shortly!");
-//   }
-//Get();
 const apiURL = "https://codissacats.azurewebsites.net/api/cat";
 const AddCat = () => {
   alert("Cat added!");
