@@ -1,12 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
-console.log(urlParams.get("catid"));
 
-function DeleteCat(id) {
+function DeleteCat() {
   alert("Cat deleted!");
-  console.log(id);
   let catid = urlParams.get("catid");
-  //let newid = document.getElementById("id").value;
-  console.log(id);
 
   let url = "https://codissacats.azurewebsites.net/api/cat" + "/" + catid;
   fetch(url)
@@ -17,7 +13,6 @@ function DeleteCat(id) {
         headers: {
           "Content-type": "application/json; charset=UTF-8", // Indicates the content
         }
-        // body: JSON.stringify(cat),
       };
       fetch(url, deleteMethod)
         .then((response) => response.text())

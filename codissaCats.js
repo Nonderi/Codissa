@@ -1,9 +1,3 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//  document.querySelector("#findCats").addEventListener("click", get)
-// })
-
-// function get(){
-// // console.log("painike toimii")
 document.addEventListener("DOMContentLoaded", Get);
 function Get() {
   fetch("https://codissacats.azurewebsites.net/api/cat")
@@ -13,7 +7,6 @@ function Get() {
       let cat_data = document.getElementById("cat-tbody");
       let cat_rows = "";
 
-      // "<tr><th>name</th><th>color</th><th>food</th></tr>";
       for (let cat of data) {
         cat_rows += `
         <div class="card" style=" display: grid; grid-template-columns: 1fr 1fr">
@@ -60,8 +53,6 @@ function Get() {
           </div>
           </div>
         `;
-        // `<tr><td id ="name">${cat.name}</td><td>${cat.color}</td><td>${cat.food}</td></tr>`;
-        //<dt>Picture</dt><dd><img src="${cat.picture}"></dd>
       }
       cat_data.innerHTML = cat_rows;
     })
