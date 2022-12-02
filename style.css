@@ -91,6 +91,36 @@
   outline: none !important;
 }
 
+.my-buttonOrange {
+  background: #c5ae8f;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 35px;
+  text-shadow: none;
+  outline: none !important;
+}
+.my-buttonOrange:hover,
+.my-buttonOrange:active {
+  background: #9b9c9c;
+}
+
+.my-buttonRed {
+  background: #c58f8f;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 35px;
+  text-shadow: none;
+  outline: none !important;
+}
+.my-buttonRed:hover,
+.my-buttonRed:active {
+  background: #9b9c9c;
+}
+
 .container div .btn-primary:hover,
 .container div .btn-primary:active,
 .my-button:hover,
@@ -98,8 +128,7 @@
   background: #9b9c9c;
 }
 
-.container div .btn-primary:active
-.my-button:active {
+.container div .btn-primary:active .my-button:active {
   transform: translateY(1px);
 }
 

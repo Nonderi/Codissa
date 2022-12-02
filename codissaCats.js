@@ -39,16 +39,16 @@ function Get() {
                     <dd>${cat.status}</dd>
                     <dt>Details</dt>
                     <dd>${cat.details}</dd>
-                </div>
-
+                
                     <div class="form-group"><button class="btn btn-primary btn-block my-button" type="button"
                     onClick="parent.location='codissaFosterForm.html?catid=${cat.id}'">Pick me</button>
-                    </div>
-                    <div class="form-group"><button class="btn btn-primary btn-block my-button" type="button"
+                    
+                    <button class="btn btn-primary btn-block my-buttonOrange" type="button"
                     onClick="parent.location='codissaDeleteReservation.html?catid=${cat.id}'">Cancel reservation</button>
-                    </div>
-                    <div class="form-group"><button class="btn btn-primary btn-block my-button" type="button"
+                    
+                    <button class="btn btn-primary btn-block my-buttonRed" type="button"
                     onClick="parent.location='DeleteCat.html?catid=${cat.id}'">Delete cat</button>
+                    </div>
                     </div>
           </div>
           </div><br><br>
